@@ -6,6 +6,8 @@ import streamlit as st
 from pathlib import Path
 from typing import Tuple, List, Optional, Dict, Any
 
+# Streamlit URL: https://ime-565-lab-6-rshetty.streamlit.app/
+
 # ========== FILES ==========
 DATA_PATH = "airline.csv"            # provided dataset (for encoding + stats)
 MODEL_PATH = "decision_tree_airline.pickle"     # pre-trained DecisionTreeClassifier
