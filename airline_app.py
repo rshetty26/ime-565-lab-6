@@ -314,7 +314,10 @@ if submitted:
             }
             pred_display = pretty.get(pred_label, pred_label)
 
-            st.success(f"**Prediction:** {pred_display}")
+            if pred_display.lower() == "satisfied":
+                st.success(f"Prediction: {pred_display}")
+            else:
+                st.error(f"Prediction: {pred_display}")
             st.metric("Confidence", f"{conf_pct:.1f}%")
 
             st.markdown("### Demographic Comparison")
