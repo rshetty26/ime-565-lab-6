@@ -12,7 +12,7 @@ MODEL_PATH = "decision_tree_airline.pickle"     # pre-trained DecisionTreeClassi
 HEADER_IMG = "airline.jpg"           # header image
 
 # ========== UI: INTRO ==========
-st.set_page_config(page_title="Airline Satisfaction Predictor", page_icon="✈️", layout="wide")
+st.set_page_config(page_title="Airline Satisfaction Predictor", layout="wide")
 
 st.title("Airline Satisfaction Predictor")
 st.write(
@@ -166,7 +166,7 @@ def encode_and_align(df_input_row: pd.DataFrame) -> pd.DataFrame:
 
 # ========== SIDEBAR SURVEY ==========
 with st.sidebar:
-    st.header("🧩 Survey Form")
+    st.header("Survey Form")
 
     # Pull category options from dataset when possible; otherwise provide safe defaults.
     def cat_options(col_name: str, fallback: List[str]) -> List[str]:
